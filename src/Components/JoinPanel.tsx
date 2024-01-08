@@ -1,18 +1,25 @@
+import { useState } from "react";
 import "../styles/JoinPanel.css";
 
-type PanelProps = {
-    email: string;
+const Panel = () => {
+    const [email, setEmail] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setEmail(value);
   };
 
-const Panel = ({email}:PanelProps) => {
+     const handleSubmit=() => {
+
+     };
     
 return (
     <div className="panel">
         <form>
             <div className="panel-form">
-            <input type="email address" placeholder="Enter your email address" required />
+            <input type="email" placeholder="Enter your email address" required onChange={handleChange} />
             </div>
-            <button type="submit" className="panel-btn">Join the Panel</button>
+            <button type="submit" className="panel-btn" onClick={handleSubmit}>Join the Panel</button>
         </form>
 
         <p>Join over 1.2m talking panelist across the world. By entering your email address,

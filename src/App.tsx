@@ -1,4 +1,3 @@
-import { useState } from "react";
 import './App.css';
 import Hero from './Components/Hero';
 import Footer from './Components/Footer';
@@ -10,16 +9,17 @@ import FAQ from "./Components/FAQs";
 import Contact from "./Components/Contact";
 
 function App() {
-  const [email, setEmail] = useState("email");
   return (
     <div className="App">
       <Hero />
-      <Home />
-      <Panel email={email} />
-      <Opinions />
-      <HowItWorks />
-      <FAQ />
-      <Contact />
+      <main>
+        <Home />
+        <Panel />
+        <Opinions />
+        <HowItWorks />
+        <FAQ />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
