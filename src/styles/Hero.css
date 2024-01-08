@@ -1,0 +1,16 @@
+.hero-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../heroImage.jpg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+@media (min-width:300px) and (max-width:600px) {
+    .hero-image {
+        height: calc(100vh * 0.5);
+    }
+}

@@ -1,0 +1,68 @@
+:root {
+    --breakpoint-medium: 768px;
+    --breakpoint-large: 1024px;
+  }
+
+.home {
+    min-width: 100vw;
+    height: 15vh;
+    bottom: 14.6em;
+    padding: 0.3rem 0 4rem 0;
+    background: #f0efef;
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.home p {
+    font-weight: 600;
+}
+
+.home .play{
+    color: #B282D1;
+    font-size: 0.5em;
+}
+
+.home h3 {
+    color: #000;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+}
+
+
+@media  (min-width:768px) {
+    .home {
+        height: 200px;
+        bottom: calc(4vw - 30.5px);
+        padding: 0.3rem 0 1.5rem 0;
+    }
+
+    .home .play{
+        font-weight: 600;
+        font-size: 1em;
+    }
+    
+    .home h3 {
+        font-size: 2.2em;
+    }
+}
+
+@media  (min-width:1024px) {
+    .home {
+        bottom: calc(4vw - 40px);
+    }
+}
+
+@media  (max-width:1024px) {
+    .home {
+        /* bottom: -10.7em; */
+    }
+}
+
+

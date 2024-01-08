@@ -1,0 +1,13 @@
+.faq h3 {
+    text-align: center;
+}
+
+.faq{
+    padding: 5px 10px;
+}
+
+.faq .questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

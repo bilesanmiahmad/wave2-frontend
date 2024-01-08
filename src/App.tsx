@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from "react";
 import './App.css';
+import Hero from './Components/Hero';
+import Footer from './Components/Footer';
+import Panel from './Components/JoinPanel';
+import Opinions from './Components/Opinions';
+import Home from './Components/Home';
+import HowItWorks from "./Components/HowItWorks";
+import FAQ from "./Components/FAQs";
+import Contact from "./Components/Contact";
 
 function App() {
+  const [email, setEmail] = useState("email");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <Home />
+      <Panel email={email} />
+      <Opinions />
+      <HowItWorks />
+      <FAQ />
+      <Contact />
+      <Footer />
     </div>
   );
 }

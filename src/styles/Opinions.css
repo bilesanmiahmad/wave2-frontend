@@ -1,0 +1,46 @@
+.opinions{
+    width: 100vw;
+    background-color: #F0E4F7;
+    color: #000;
+    padding: 0.5em 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opinions .opinions-header {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.opinions .opinions-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.opinions-content {
+    padding:1px 10px 5px 10px;
+}
+
+.opinions-content .number {
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 0.2em;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+.opinions-content .amount {
+    margin-top: 1.9em;
+}
+
+@media  (min-width:768px) {
+    .opinions-content .amount {
+        margin-top: 1em;
+    }
+    .opinions-content .exchange {
+        text-wrap:wrap;
+    }
+}
