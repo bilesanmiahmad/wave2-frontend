@@ -1,6 +1,6 @@
 import "../styles/Opinions.css";
 
-const Opinions = () => {
+const Opinions:React.FC = () => {
     return (
         <div className="opinions">
             <p className="opinions-header">Your No1 opinion Marketplace.</p>

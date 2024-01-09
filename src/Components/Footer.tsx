@@ -1,6 +1,8 @@
-const Footer = () => {
+import "../styles/Footer.css";
+
+const Footer:React.FC = () => {
     return (
-        <div>
+        <div className="footer">
             <div>
                 <span>Facebook</span>
                 <span>twitter</span>

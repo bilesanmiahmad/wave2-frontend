@@ -1,6 +1,6 @@
 import "../styles/Home.css";
 
-const Home = () => {
+const Home:React.FC = () => {
     return (
         <div className="home">
             <p className="play">Talk panel</p>

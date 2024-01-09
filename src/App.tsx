@@ -8,7 +8,7 @@ import HowItWorks from "./Components/HowItWorks";
 import FAQ from "./Components/FAQs";
 import Contact from "./Components/Contact";
 
-function App() {
+const App:React.FC = ()=> {
   return (
     <div className="App">
       <Hero />

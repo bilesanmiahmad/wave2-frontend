@@ -1,6 +1,6 @@
 import "../styles/FAQs.css"
 
-const FAQ =()=>{
+const FAQ:React.FC =()=>{
     return (
         <div className="faq">
             <h3>FAQs</h3>

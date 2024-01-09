@@ -1,6 +1,6 @@
 import "../styles/Hero.css"
 
-const Hero = () => {
+const Hero:React.FC = () => {
     return (
         <header>
             <div className="hero-image">

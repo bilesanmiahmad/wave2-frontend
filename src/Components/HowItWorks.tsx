@@ -1,6 +1,6 @@
 import "../styles/Howitworks.css";
 
-const HowItWorks = () => {
+const HowItWorks:React.FC = () => {
     return (
         <div className="howitworks">
             <h3>How it works</h3>

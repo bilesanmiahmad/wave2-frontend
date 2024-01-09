@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/JoinPanel.css";
 
-const Panel = () => {
+const Panel:React.FC = () => {
     const [email, setEmail] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -9,8 +9,23 @@ const Panel = () => {
     setEmail(value);
   };
 
-     const handleSubmit=() => {
+    const handleSubmit = async(e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        let options = {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({email})
+        };
 
+        try {
+            const response = await fetch("http://localhost:8000/", options);
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.log(error)
+        }
      };
     
 return (
