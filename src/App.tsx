@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import './App.css';
 import Hero from './Components/Hero';
 import Footer from './Components/Footer';
@@ -9,12 +10,35 @@ import FAQ from "./Components/FAQs";
 import Contact from "./Components/Contact";
 
 const App:React.FC = ()=> {
+  const [email, setEmail] = useState<string>("");
+
+  const handleSubmit = async(e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      let options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({email})
+    };
+
+    try {
+        const response = await fetch("http://localhost:8000/contact/", options);
+        const data = await response.json();
+        console.log(data);
+        setEmail("");
+    } catch (error) {
+        console.log(error)
+    }
+    }
+ };
   return (
     <div className="App">
       <Hero />
       <main>
         <Home />
-        <Panel />
+        <Panel email={email} setEmail={setEmail} handleSubmit = {handleSubmit} />
         <Opinions />
         <HowItWorks />
         <FAQ />
