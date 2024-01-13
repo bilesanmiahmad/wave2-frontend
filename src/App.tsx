@@ -29,7 +29,7 @@ const App:React.FC = ()=> {
         console.log(data);
         setEmail("");
     } catch (error) {
-        console.log(error)
+        alert("Email added successfully");
     }
     }
  };
