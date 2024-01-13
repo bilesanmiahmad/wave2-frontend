@@ -1,16 +1,8 @@
-:root {
-    --breakpoint-medium: 768px;
-    --breakpoint-large: 1024px;
-  }
-
 .home {
-    min-width: 100vw;
-    height: 15vh;
-    bottom: 14.6em;
-    padding: 0.3rem 0 4rem 0;
+    width: 100vw;
+    padding: 0.3rem 0 3rem 0;
     background: #f0efef;
     opacity: 0.9;
-    position: absolute;
     text-align: center;
     border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,32 +28,31 @@
 }
 
 
-@media  (min-width:768px) {
+
+@media  (min-width:640px)  {
     .home {
-        height: 200px;
-        bottom: calc(4vw - 30.5px);
+        height: 25vh;
+        /* bottom: 50px; */
         padding: 0.3rem 0 1.5rem 0;
     }
 
     .home .play{
         font-weight: 600;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     
     .home h3 {
-        font-size: 2.2em;
+        font-size: 1.5em;
+    }
+
+    .home p {
+        font-size: 0.8em;
     }
 }
 
-@media  (min-width:1024px) {
+@media (min-width:768px) {
     .home {
-        bottom: calc(4vw - 40px);
-    }
-}
-
-@media  (max-width:1024px) {
-    .home {
-        /* bottom: -10.7em; */
+        bottom: 270px;
     }
 }
 
