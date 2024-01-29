@@ -1,6 +1,4 @@
 .home {
-    width: 100vw;
-    padding: 0.3rem 0 3rem 0;
     background: #f0efef;
     opacity: 0.9;
     text-align: center;
@@ -29,30 +27,19 @@
 
 
 
-@media  (min-width:640px)  {
-    .home {
-        height: 25vh;
-        /* bottom: 50px; */
-        padding: 0.3rem 0 1.5rem 0;
-    }
-
-    .home .play{
-        font-weight: 600;
-        font-size: 0.8em;
+@media (min-width: 1024px) {
+        .home .play{
+        font-weight: 800;
+        font-size: 1.8em;
+        text-align: start;
     }
     
     .home h3 {
-        font-size: 1.5em;
+        font-size: 4em;
     }
 
     .home p {
-        font-size: 0.8em;
-    }
-}
-
-@media (min-width:768px) {
-    .home {
-        bottom: 270px;
+        font-size: 1.8em;
     }
 }
 
